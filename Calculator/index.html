@@ -4,81 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <style>
-      body {
-        background-image: url("bg.png");
-        position: relative;
-      }
-      h1 {
-        text-align: center;
-        color: rgb(0, 0, 0);
-        font-size: 50px;
-      }
-      .container {
-        background-color: #7ed76d;
-        padding: 10px;
-        border: 5px solid #ccc;
-        height: 600px;
-        width: 350px;
-        margin: 0 auto;
-        margin-top: 3%;
-        box-shadow: 50px 30px 30px rgba(0, 0, 0, 0.5);
-      }
-
-      .calculator {
-        max-width: 240px;
-        margin: 0 auto;
-      }
-
-      #display,
-      #resultBox {
-        background-color: #D3F5FF;
-        font-size: larger;
-        width: 92%;
-        height: 40px;
-        margin-bottom: 10px;
-        color: black;
-      }
-
-      .buttons {
-        display: grid;
-        grid-gap: 5px;
-      }
-
-      .row {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-      }
-
-      .buttons button {
-        margin: 1px;
-        width: 48px;
-        height: 48px;
-        font-size: 18px;
-      }
-
-      .blue {
-        background-color: #23CEFC;
-        color: white;
-      }
-
-      .red {
-        background-color: #FC366D;
-        color: white;
-      }
-
-      .clear-btn {
-        font-size: 26px;
-        width: 96%;
-        height: 34px;
-        background-color: #B837F2;
-        color: white;
-        border: none;
-      }
-      button:hover {
-        transform: scale(1.2);
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <body>
@@ -127,27 +53,6 @@
             <button class="clear-btn" onclick="clearDisplay()">Clear</button>
           </div>
         </div>
-        <script>
-            let display = document.getElementById("display");
-            let resultBox = document.getElementById("resultBox");
-      
-            function appendInput(input) {
-              display.value += input;
-            }
-      
-            function calculateResult() {
-              try {
-                resultBox.value = eval(display.value);
-              } catch (error) {
-                resultBox.value = "Error";
-              }
-
-            }
-      
-            function clearDisplay() {
-              display.value = "";
-              resultBox.value = "";
-            }
-          </script>
+        <script src="script.js"></script>
   </body>
 </html>
