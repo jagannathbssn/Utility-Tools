@@ -1,0 +1,88 @@
+body {
+  margin: 5% 0 0;
+  padding: 0;
+  background: linear-gradient(
+    132deg,
+    rgb(251, 251, 255) 0%,
+    rgb(215, 223, 252) 100%
+  );
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+h1 {
+  font-size: 45px;
+  margin-top: 3%;
+  text-align: center;
+  padding: 10px;
+}
+.c0 {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid black;
+  max-height: 400px;
+  min-width: 600px;
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+.c01 {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+.c1 {
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  font-size: 26px;
+  font-weight: 600;
+  color: #721282;
+}
+.c1 input {
+  width: 180px;
+  height: 25px;
+  padding: 5px;
+  font-size: 20px;
+  color: black;
+  background-color: bisque;
+}
+.c3 {
+  margin: 0% 13%;
+  margin-bottom: 3%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.c3 button {
+  height: 40px;
+  width: 150px;
+  margin: 0px 40px;
+  background-color: beige;
+  font-size: 20px;
+}
+#error-msg {
+  text-align: center;
+  color: red;
+  font-weight: 500;
+}
+
+#rupee-icon {
+  position: absolute;
+  top: 20%;
+  left: 10px;
+  width: 400px;
+  height: auto;
+}
+
+#dollar-icon {
+  position: absolute;
+  top: 20%;
+  right: 10px;
+  width: 400px;
+  height: auto;
+}
