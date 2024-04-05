@@ -1,0 +1,51 @@
+body {
+  background-image: url(bg9.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 6%;
+}
+.c0 {
+  margin: auto;
+  padding: 10px;
+  background-color: azure;
+  width: fit-content;
+  border: 5px solid;
+  box-shadow: 20px 15px 10px white;
+}
+.c1 {
+  margin-left: 9%;
+}
+.c2 {
+  margin: 20px 0px;
+  font-size: 24px;
+  font-weight: 550;
+}
+.c3 {
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.c4 {
+  font-size: 20px;
+  padding: 5px;
+  width: 85px;
+  margin-bottom: 5px;
+}
+#convert {
+  margin-right: 100px;
+}
+#bmi {
+  border-radius: 5px;
+  height: 25px;
+  width: 160px;
+  font-size: large;
+}
+#indicator {
+  border-radius: 5px;
+  height: 25px;
+  width: 40px;
+}
+.c5 {
+  margin-top: 10px;
+  font-size: 25px;
+}

@@ -5,27 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <style>
-      body {
-        background-image: url("jsprojects/bg7.jpg");
-      }
-    </style>
   </head>
   <body>
-    <h1 class="c0">BMI Calculator</h1>
-    <div class="c1">
-      <div class="c3">
-        <label for="height">Height</label>
-        <input type="number" class="c2" id="height" />
+    <div class="c0">
+      <div class="c1">
+        <h1>BMI Calculator</h1>
       </div>
-      <div class="c3">
-        <label for="weight">Weight</label>
-        <input type="number" class="c2" id="weight" />
+      <hr />
+      <div class="c2">
+        <label for="height">Height</label><br />
+        <input
+          class="c3"
+          type="number"
+          min="1"
+          id="height"
+          placeholder="Enter your height in cm"
+        />
       </div>
-      <button class="c3">Convert</button>
-      <input type="number" class="c2" disabled />
+      <div class="c2">
+        <label for="weight">Weight</label><br />
+        <input
+          class="c3"
+          type="number"
+          min="1"
+          id="weight"
+          placeholder="Enter your weight in kg "
+        />
+      </div>
+      <div>
+        <button class="c4" id="convert">Convert</button>
+        <button class="c4" id="clear">Clear</button>
+      </div>
+      <hr />
+      <div class="c5">
+        Result
+        <div>
+          <input type="text" id="bmi" disabled />
+          <input type="text" id="indicator" disabled />
+        </div>
+      </div>
     </div>
-    <script></script>
     <script src="script.js"></script>
   </body>
 </html>
