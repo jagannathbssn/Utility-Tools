@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Utility-Tools</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f8f9fa;
+        transition: background-color 0.5s;
+      }
+      .container {
+        border: 10px solid black;
+        border-radius: 0px 50px;
+        text-align: center;
+        background-color: azure;
+        height: 80vh; /* Adjust the height as needed */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      header {
+        margin-bottom: 100px;
+      }
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .btn {
+        margin: 5px; /* Reduce the margin between buttons */
+        width: 350px; /* Slightly increased width of the buttons */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Welcome, please choose the required tool.</h1>
+      </header>
+      <div class="buttons">
+        <a
+          href="Age Calculator/age_calculator.html"
+          class="btn btn-primary"
+          role="button"
+          >Age Calculator</a
+        >
+        <a
+          href="BMI Calculator/bmi_calc.html"
+          class="btn btn-secondary"
+          role="button"
+          >BMI Calculator</a
+        >
+        <a href="Todo list/todo.html" class="btn btn-success" role="button"
+          >To-Do List</a
+        >
+        <a
+          href="Temprature Converter/tempconv.html"
+          class="btn btn-danger"
+          role="button"
+          >Temperature Converter</a
+        >
+        <a href="Calculator/calc.html" class="btn btn-warning" role="button"
+          >Calculator</a
+        >
+        <a
+          href="rupee to dolar converter/rtod.html"
+          class="btn btn-info"
+          role="button"
+          >Rupee to Dollar Converter</a
+        >
+      </div>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS for background color change -->
+    <script>
+      function getRandomColor() {
+        const letters = "0123456789ABCDEF";
+        let color = "#";
+        for (let i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+
+      function changeBackgroundColor() {
+        document.body.style.backgroundColor = getRandomColor();
+      }
+
+      // Change the background color every 3 seconds
+      setInterval(changeBackgroundColor, 2000);
+    </script>
+  </body>
+</html>
